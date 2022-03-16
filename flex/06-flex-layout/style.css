@@ -5,8 +5,48 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.left-links, .right-links {
+  display: flex;
+  gap: 1em;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+  }
+
+/* Just for the fun of it, lol */
+a:hover {
+  color: #e4b362;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  text-shadow: 0 0 0.5px #666;
+}
+/* Enough fun */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1em;
+}
 img {
   width: 600px;
 }
@@ -16,6 +56,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 0.5em 1em;
 }
 
 input {
@@ -24,4 +65,8 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.footer {
+  background: #eee;
 }
